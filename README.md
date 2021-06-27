@@ -19,6 +19,6 @@ We provided two implementations of the MILP model:
 Based on our preliminary benchmark, Gurobi is much faster than CBC when problem size is big (e.g., dozens of jobs on hundreds of nodes).
 Otherwise, the time to solve is very similar between Gurobi and CBC when problem size is small.<br>
 
-The PYTHON-MIP also supports using Gurobi as solver (license required as well) but slower than gurobipy especially when problem size is large.
+The PYTHON-MIP also supports using Gurobi as solver (license required as well) but slower than gurobipy in most cases especially when problem size is large.
 Thus, one can use the free CBC when problem size is small, especailly for relatively small supercomputers. 
 Otherwise, Gurobi with the gurobipy based implementation is recommended.
