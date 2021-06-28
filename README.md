@@ -1,5 +1,5 @@
 # BFTrainerSimu
-A simulator for BFTrainer evaluation
+A scheduler log replayer for BFTrainer evaluation
 
 - This simulator replays real scheduler logs for evaluation of different DNN training scenarios and objective metrics. 
 - The simulator uses exactly the same MILP implementation as it in the BFTrainer.
