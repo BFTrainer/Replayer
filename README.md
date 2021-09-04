@@ -19,7 +19,7 @@ Target user of the simulator:
 
 - `BFTrainer-replay.py` the main program to replay real scheduler to evaluate our resource allocation algorithm 
 - `jobs.py` implements functions to manage jobs.
-- `prog.py` the implementation of mixed Integer linear programming using Gurobi optimizer. We will also open source our implementation using free optimizer (e.g., CBC, Pulp and JuMP) in the final version. You can get an Trial Licenses or Free Academic Licenses from Gurobi if you want to run the current version.
+- `progCBC.py` or `progGRB.py` the implementation of mixed Integer linear programming using Gurobi optimizer. We will also open source our implementation using free optimizer (e.g., CBC, Pulp and JuMP) in the final version. You can get an Trial Licenses or Free Academic Licenses from Gurobi if you want to run the current version.
 - `trace.py` has functions to manage scheduler logs for the replay evaluation.
 
 
