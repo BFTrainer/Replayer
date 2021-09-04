@@ -7,7 +7,7 @@ from util import str2bool
 
 os.environ['GRB_LICENSE_FILE'] = '/path/to/gurobi.lic'
 import gurobipy as grb
-from prog import re_allocate, re_allocate_ndf
+from progGRB import re_allocate, re_allocate_ndf
 
 parser = argparse.ArgumentParser(description='MIP for optimal resource allocation, one step only')
 parser.add_argument('-nis',   type=int, default=0, help='starting node index')
