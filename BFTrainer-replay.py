@@ -13,7 +13,7 @@ parser = argparse.ArgumentParser(description='MIP for optimal resource allocatio
 parser.add_argument('-nis',   type=int, default=0, help='starting node index')
 parser.add_argument('-nN',    type=int, default=None, help='first N nodes')
 parser.add_argument('-Tfwd',  type=int, default=10, help='time of expected forward')
-parser.add_argument('-optTL', type=int, default=1200, help='time limit for optimizer')
+parser.add_argument('-optTL', type=int, default=10, help='time limit for optimizer')
 parser.add_argument('-name',  type=str, default='debug', help='evaluation name')
 parser.add_argument('-ndmap', type=str, default='./dataset/ndstat-10sdn6-evt.pkl', help='node state map data')
 parser.add_argument('-bdfn',  type=str, default='./dataset/hps-shufflenet-Jbnd-10J.pkl', help='job bound info')
