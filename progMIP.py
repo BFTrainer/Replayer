@@ -74,7 +74,7 @@ def re_allocate(cmap, jmin, jmax, Ns, Os, Tfwd, res_up, res_dw, time_limit, solv
 
         m.add_sos([(w4sappro[_j][_i], Ns[_j][_i]) for _i in I], 2)  
 
-        S_approx[_j] = xsum(Ps[_j][_i] * w4sappro[_j][_i] for _i in I)
+        S_approx[_j] = xsum(Os[_j][_i] * w4sappro[_j][_i] for _i in I)
 
     # scale up/down cost
     dummy4upcost = [m.add_var(var_type=BINARY) for _j in J]
